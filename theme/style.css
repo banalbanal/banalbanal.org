@@ -1,0 +1,67 @@
+html {
+  font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace;
+  cursor: url('cursor.png');
+  cursor: -webkit-image-set(
+    url('cursor.png') 1x,
+    url('cursor@2x.png') 2x
+  ), auto;
+}
+body {
+  padding: 1.3em 1.8em 1.8em;
+  font-size: 0.8em;
+}
+a {
+  color: black;
+}
+a:hover {
+  color: #00ff00;
+  cursor: url('cursor.png');
+  cursor: -webkit-image-set(
+    url('cursor.png') 1x,
+    url('cursor@2x.png') 2x
+  ), auto;
+}
+p {
+  margin: 1.8em 0;
+}
+.logo {
+  margin-bottom: 1.8em;
+}
+.main-menu {
+  margin-bottom: 2.5em;
+  font-size: 1.5em
+}
+.main-menu a {
+  text-transform: uppercase;
+}
+.main-menu a:before {
+  content: "////////// ";
+}
+.main-menu a img {
+  position: absolute;
+  width: 160px;
+  margin-top: -39px;
+  margin-left: 20px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .main-menu a:hover img {
+    display: inline-block;
+  }
+}
+.page-content {
+  max-width: 590px;
+  line-height: 1.5em;
+}
+.page-content i {
+  font-size: 0.8em;
+}
+.hidden {
+  display: none;
+}
+.link-stamp {
+  vertical-align: middle;
+  height: 2em;
+  margin-top: -1px;
+  margin-left: -5px;
+}

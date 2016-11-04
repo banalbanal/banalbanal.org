@@ -1,0 +1,68 @@
+<!DOCTYPE html 
+      PUBLIC "-//W3C//DTD HTML 4.01//EN"
+      "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US">
+  <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" 
+          type="image/png" 
+          href="theme/cursor.png">
+    <link rel="stylesheet" href="theme/style.css">
+    <meta property="og:image" content="http://banalbanal.diogovianna.com/theme/display.png" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>BANAL BANAL</title>
+  </head>
+  
+  <a href="/"><img src="theme/logo.gif" width="205" class="logo"></a>
+  
+  <div class="main-menu">
+    <div><a href="/info.php">Info</a></div>
+    <div><a href="#" class="toggle">Index</a></div>
+    <div><a href="/bb0001.php" class="hidable hidden">BB0001</a></div>
+  </div>
+  
+  <div class="page-content">
+    
+    <p>
+      <a href="pornhub.com">"Virtual Sunset"</a>
+      <img class='link-stamp' src="theme/link.png">
+    </p>
+   
+    <p>17/05/2016 11h 20m 35s</p>
+   
+    <p>
+      Artistas: Helô Duran & Ceticências<br>
+      <i>Artists</i>
+    </p>
+   
+    <p>
+      O passeio conduzido pelas ferramentas do Google Street View nos arremessa em imagens de um cenário que problematiza, em sua própria natureza, os limites entre o plano físico e o digital. Se o dispositivo pretende servir como documentação geográfica das ruas da cidade, o que realmente se vê são apenas imagens recortadas e coladas umas nas outras para serem expostas on line, com certa naturalização de erros na visualização. Problema ainda maior: o que é possível de se visualizar não passa de uma cristalização, uma tentativa de representatividade obtida por meio da captura fotográfica em um determinado instante. Ou seja, o que entendemos como vida real nos é apresentado através de uma fração infinitesimal do que de fato pode ocorrer em um espaço socialmente ativado. A partir daí, o que podemos fazer são caminhadas que a cada toque do mouse ou do teclado naturalmente editam, mixam e reprogramam o espectro das ruas que nos é apresentado.
+      <br><br>
+      <i>
+      O passeio conduzido pelas ferramentas do Google Street View nos arremessa em imagens de um cenário que problematiza, em sua própria natureza, os limites entre o plano físico e o digital. Se o dispositivo pretende servir como documentação geográfica das ruas da cidade, o que realmente se vê são apenas imagens recortadas e coladas umas nas outras para serem expostas on line, com certa naturalização de erros na visualização. Problema ainda maior: o que é possível de se visualizar não passa de uma cristalização, uma tentativa de representatividade obtida por meio da captura fotográfica em um determinado instante. Ou seja, o que entendemos como vida real nos é apresentado através de uma fração infinitesimal do que de fato pode ocorrer em um espaço socialmente ativado. A partir daí, o que podemos fazer são caminhadas que a cada toque do mouse ou do teclado naturalmente editam, mixam e reprogramam o espectro das ruas que nos é apresentado.
+      </i>
+    </p>
+    
+  </div>
+</html>
+
+<script>
+var toggle = document.querySelector('.toggle')
+toggle.addEventListener('click', function(event) {
+  var hidable = document.querySelector('.hidable')
+  var content = document.querySelector('.page-content')
+  hidable.classList.toggle('hidden')
+  content.classList.toggle('hidden')
+})
+</script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78045920-1', 'auto');
+  ga('send', 'pageview');
+
+</script>

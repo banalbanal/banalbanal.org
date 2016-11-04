@@ -1,0 +1,125 @@
+<!DOCTYPE html 
+      PUBLIC "-//W3C//DTD HTML 4.01//EN"
+      "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US">
+  <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" 
+          type="image/png" 
+          href="theme/cursor.png">
+    <meta property="og:image" content="http://banalbanal.org/theme/display.png" />
+    <title>BANAL BANAL</title>
+    <script src="//cdn.jsdelivr.net/interact.js/1.2.6/interact.min.js"></script>
+  </head>
+  <body style="background: #00ff00;">
+  <audio autoplay>
+    <source src="https://trello-attachments.s3.amazonaws.com/5791217b8864b1ef59cdb02c/57ae20637c57e9186939d125/caa9718fd3c485ed1f059954e248a78c/elevator2.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+    <div style="padding: 60px">
+    <div class="wrapper">
+      <img src="f12.jpg"  class="draggable f1" />
+      <img src="f11.jpg"  class="draggable f2" />
+      <img src="f10.jpg"  class="draggable f3" />
+      <img src="f9.jpg"  class="draggable f4" />
+      <img src="f8.jpg"  class="draggable f5" />
+      <img src="f7.jpg"  class="draggable f6" />
+      <img src="f6.jpg"  class="draggable f7" />
+      <img src="f5.jpg"  class="draggable f8" />
+      <img src="f4.jpg"  class="draggable f9" />
+      <img src="f3.jpg" class="draggable f10"  />
+      <img src="f2.jpg" class="draggable f11"  />
+      <img src="f1.jpg" class="draggable f12"  />
+  
+      <img src="u12.jpg"  class="draggable u12" />
+      <img src="u11.jpg"  class="draggable u11" />
+      <img src="u10.jpg"  class="draggable u10" />
+      <img src="u9.jpg"  class="draggable u9" />
+      <img src="u8.jpg"  class="draggable u8" />
+      <img src="u7.jpg"  class="draggable u7" />
+      <img src="u6.jpg"  class="draggable u6" />
+      <img src="u5.jpg"  class="draggable u5" />
+      <img src="u4.jpg"  class="draggable u4" />
+      <img src="u3.jpg" class="draggable u3"  />
+      <img src="u2.jpg" class="draggable u2"  />
+      <img src="u1.jpg" class="draggable u1"  />
+    </div>
+    </div>
+    <style>
+      body {
+        cursor: url("c1.png"), pointer;
+      }
+      .wrapper {
+        position: relative;
+        width: 1050px;
+        margin: 0px auto;
+        height: 1000px;
+      }
+      
+      img {
+        max-width: 200px;
+        position: absolute;
+      }
+      
+      .f1,.f2,.f3,.f4,.u1,.u2,.u3,.u4 { top: 0px }
+      .f5,.f6,.f7,.f8,.u5,.u6,.u7,.u8 { top: 380px }
+      .f9,.f10,.f11,.f12,.u9,.u10,.u11,.u12 { top: 740px }
+      
+      .f1,.f5,.f9,.u1,.u5,.u9 { left: 0px }
+      .f2,.f6,.f10,.u2,.u6,.u10 { left: 290px }
+      .f3,.f7,.f11,.u3,.u7,.u11 { left: 570px }
+      .f4,.f8,.f12,.u4,.u8,.u12 { left: 850px }      
+      
+      .f4 { width: 190px }
+      .f11 { width: 175px}
+      .f9 { width: 170px }
+      
+      .drop-target { cursor: url("c2.png"), pointer; }
+      
+    </style>
+    
+    <script>
+// target elements with the "draggable" class
+interact('.draggable')
+  .draggable({
+    // enable inertial throwing
+    inertia: true,
+
+    // enable autoScroll
+    autoScroll: true,
+
+    // call this function on every dragmove event
+    onmove: dragMoveListener,
+    
+    onstart: function (event) {
+      // feedback the possibility of a drop
+      event.target.classList.add('drop-target');
+    },
+    
+    onend: function (event) {
+      // remove the drop feedback style
+      event.target.classList.remove('drop-target');
+    }
+  });
+  
+  function dragMoveListener (event) {
+    var target = event.target,
+        // keep the dragged position in the data-x/data-y attributes
+        x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+        y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+    // translate the element
+    target.style.webkitTransform =
+    target.style.transform =
+      'translate(' + x + 'px, ' + y + 'px)';
+
+    // update the posiion attributes
+    target.setAttribute('data-x', x);
+    target.setAttribute('data-y', y);
+  }
+
+  // this is used later in the resizing and gesture demos
+  window.dragMoveListener = dragMoveListener;
+    </script>
+    
+  </body>
+</html>

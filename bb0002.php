@@ -1,0 +1,104 @@
+<!DOCTYPE html 
+      PUBLIC "-//W3C//DTD HTML 4.01//EN"
+      "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US">
+  <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon" 
+          type="image/png" 
+          href="theme/cursor.png">
+    <link rel="stylesheet" href="theme/style.css">
+    <meta property="og:image" content="http://banalbanal.org/theme/display.png" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <title>BANAL BANAL</title>
+  </head>
+  
+  <a href="/"><img src="theme/logo.gif" width="205" class="logo"></a>
+  
+  <?php include 'menu.php'?>
+
+  <div class="page-content">
+    
+    <p>
+      <a href="/media/bb0002/index.html">
+        Traplev - Carteado pedagógico virtual para estado de exceção
+        <img class='link-stamp' src="theme/link.png">
+      </a>
+    </p>
+   
+    <p>
+      Texto: Traplev<br>
+      <i>Text</i>
+    </p>
+    
+    <p>29/08/2016 10h 30m 12s</p>
+    
+    <p>
+      Essa série acabou acontecendo espontaneamente no impulso dos acontecimentos ao vivo, na simultaneidade das notícias sobre a consolidação do primeiro passo do golpe e de todas as críticas e reflexões que foram se sucedendo nesse período de abril de 2016 pra cá.
+    </p>
+    <p>
+O print e as intervenções digitais feitas no celular com as letras do alfabeto, números e sinais foram surgindo aleatoriamente para compreender algo que eu já tinha na ficção (fixação), com a ideia de usar em suportes diferentes e tal. No contexto conceitual pra mim essas questões levantadas nos textos mesmo, eram e são uma forma de provas da reflexão crítica e denunciativa de um estado e de uma linguagem que se explodiram. E não tentar compreender essa essência do tempo que estamos experimentando é um equívoco...
+    </p>
+    <p>
+Por isso acho que tratar dessa ação como um desdobramento para aplicação e ativação de um projeto pedagógico seria o ideal, porque a proposta é haver mesmo mais de 30 peças entre letras, números e sinais gráficos e matemáticos para poderem ser desdobradas para as mídias digitais (site, postagens, gifs, etc.) e suportes diferentes para instalações em um dado espaço e tal...  Isso inclusive já abre umas possibilidades bacanas que pensei agora... Enfim… A sensação de poder ver todo o conjunto de letras e números, aleatoriamente constrói leituras também em diversas esferas e camadas, juntando consoantes e números com vogais, sinais e etc. Eles projetam códigos de leitura "ilegível" através do qual nos abrimos para uma certa busca de compreensão, pelo menos dos gatilhos do pensamento, além claro da força estética que é a primeira coisa que chama atenção na leitura dinâmica de 1 a 2 segundos.
+    </p>
+    <p>
+Já os retratos também foram produzidos, deixa eu ver… acho que antes de abril de 2016, teria que averiguar… mas era nesse sentido também de que com toda aquela implosão da linguagem, e quando falo implosão da linguagem eu registro o discurso de um político afirmando que "não vai faltar água" faltando, entende?! Eu falo do estilhaço da linguagem como uma indicação… Porque, pra mim, todos os signos e significados foram para os ares, não podemos mais reagir às coisas como 6, 7, 8 meses atrás, porque a tradução do que era CERTO agora é ERRADO e vice-versa..... Ou sim é não e não é sim.
+    </p>
+    <p>
+Como aceitar toda essa situação que nos é colocada a força, por uma elite oligarca, machista e reacionária? É inaceitável… mas é um fato real.
+    </p>
+    <p>
+Estamos vivendo em um Estado de Exceção, em que as premissas jurídicas foram todas invertidas, justamente para poderem ser manipuladas em favor do estado autoritário que se enxerga descaradamente. 
+    </p>
+    <p>
+A linguagem aqui não quer saber se isso é o que deveria ser. Ela simplesmente acontece e se manifesta, e de alguma forma incomoda; questiona; e coloca em questão esse dado histórico que nos é imposto sobre justificativas, que para uma lucidez psicanalítica, são indefensáveis. Mas acho que tem muita coisa pra vir ainda, não só na deslegitimação ou legitimação da farsa e da própria linguagem... Porque ainda virá a ressaca do pós-golpe ou...
+    </p>
+    <p>
+      <i>
+The series of “Virtual pedagogic cards for state of exception” came to life in a very spontaneous way impulsed by the live events, simultaneously to the news flow about the consolidation of the coup and all the critics and reflections that happened in this period, from April 2016 to here.
+      </i>
+    </p>
+    <p>
+      <i>
+The print and the digital interventions made on the cellphone with letters, numbers and signs were used to comprehend something that I already had in the fiction (fixation) of ideas for different supports and all… Conceptually, to me this questions that are brought up in the texts were and are a form of proof of the critical reflection and denounce of a state and of a language there were exploded. And not trying to comprehend this essence of the time we are experimenting is a mistake.
+      </i>
+    </p>
+    <p>
+      <i>
+That’s why I think it would be ideal to manage this action into ramifications to be applied and activated in a pedagogical project, because the propose is to have more than 30 pieces using letters, numbers, and graphic and mathematical signs to point out to new media (websites, posts, gifs, etc.) and different supports for installations in a given space and all… Actually, that even opens up to new cool possibilities that I just thought of… Anyway… The sensation of being able to see the whole set of letters and numbers, randomly construct many possibilities of readings, in many spheres and layers, gathering consonants and numbers with vowels, signs and etc. They project codes of “illegible” readings trough which we can try to find some comprehension, or at least a trigger of thoughts, besides, of course, the aesthetic impression – the first thing that comes up in the dynamic reading of 1 or 2 seconds.
+      </i>
+    </p>
+    <p>
+      <i>
+As to the portraits, they also were produced... Let me see… I think it was before April 2016; I would have to check it… but it sure was in this same sense, of dealing with all that implosion of language, and when I say implosion of language I register the speech made by a politician saying that “we would not face water shortages”, while we are facing it… Do you get it?! I’m talking about the shrapnel of language as an indication… To me all the signs and meanings were blown up, we cannot react anymore to all that stuff as we did 6, 7, 8 months ago, because the translation of what was RIGHT now is WRONG and vice versa… Or yes is no and no is yes.
+      </i>
+    </p>
+    <p>
+      <i>
+How can we accept this situation that is forcibly pushed onto us, by an oligarchic, sexist and reactionary elite? It’s unacceptable… but it’s a fact.
+      </i>
+    </p>
+    <p>
+      <i>
+We are now living in a State of Exception, under which the legal premises were all inverted, just so they can be manipulated in favor of an authoritarian state that we now watch shamelessly.
+      </i> 
+    </p>
+    <p>
+      <i>
+The language here is not concerned if this is what it is supposed to be. It simply happens and manifest it self, and somehow disturbs; objects; and calls into question this historical fact that is imposed through new justifications, that under a psychoanalytic lucidity, are indefensible. But I do think there is much to come, not only in the matters of legitimizing or not the farce and the language itself… Because the hangover after the coup is still to come or…
+      <i>
+    </p>
+  </div>
+</html>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78045920-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
