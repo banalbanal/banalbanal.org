@@ -10,17 +10,14 @@
     <meta property="og:image" content="http://banalbanal.org/theme/display.png" />
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>BANAL BANAL</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
   </head>
-  <script>
-    window.onload=function(){function a(a,b){var c=/^(?:file):/,d=new XMLHttpRequest,e=0;d.onreadystatechange=function(){4==d.readyState&&(e=d.status),c.test(location.href)&&d.responseText&&(e=200),4==d.readyState&&200==e&&(a.outerHTML=d.responseText)};try{d.open("GET",b,!0),d.send()}catch(f){}}var b,c=document.getElementsByTagName("*");for(b in c)c[b].hasAttribute&&c[b].hasAttribute("data-include")&&a(c[b],c[b].getAttribute("data-include"))};
-  </script>
-
-
   <body> 
  
-    <a href="/"><img src="theme/logo.gif" width="205" class="logo"></a>
+    <a href="index.html"><img src="theme/logo.gif" width="205" class="logo"></a>
   
-    <div data-include="menu.html"></div> 
+    <div class="inject-menu"></div>
 
   </body>
 
