@@ -10,7 +10,7 @@
     <title>BANAL BANAL</title>
     <!-- <script src="//cdn.jsdelivr.net/interact.js/1.2.6/interact.min.js"></script> -->
   </head>
-  <body style="background: #6699ff;">
+  <body>
     <audio autoplay>
       <!-- <source src="https://trello-attachments.s3.amazonaws.com/5791217b8864b1ef59cdb02c/57ae20637c57e9186939d125/caa9718fd3c485ed1f059954e248a78c/elevator2.mp3" type="audio/mpeg"> -->
       Your browser does not support the audio element.
@@ -19,6 +19,22 @@
 
     </div>
     <style>
+      body {
+        animation:bgcolor 5s;
+        -moz-animation:bgcolor 5s infinite; /* Firefox */
+        -webkit-animation:bgcolor 5s infinite; /* Safari and Chrome */
+      }
+      @-moz-keyframes bgcolor {
+        0%   {background:#6699ff;}
+        50%  {background:#ffccff;}
+        100%   {background:#ffff99;}
+      }
+
+      @-webkit-keyframes bgcolor {
+        0%   {background:#6699ff;}
+        50%  {background:#ffccff;}
+        100%   {background:#ffff99;}
+      }
     </style>
     <script>
     </script>
