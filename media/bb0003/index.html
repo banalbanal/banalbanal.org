@@ -20,10 +20,18 @@
     </div>
     <style>
       body {
+        text-align: center;
         animation:bgcolor 15s;
         -moz-animation:bgcolor 15s infinite; /* Firefox */
         -webkit-animation:bgcolor 15s infinite; /* Safari and Chrome */
-        text-align: center;
+      }
+      .mao {
+        max-width: 80%;
+        max-height: 80%;
+        height: auto;
+        animation:spin 15s;
+        -moz-animation:spin 15s infinite; /* Firefox */
+        -webkit-animation:spin 15s infinite; /* Safari and Chrome */
       }
       @-moz-keyframes bgcolor {
         0%   {background:#6699ff;}
@@ -38,10 +46,17 @@
         66%   {background:#ffff99;}
         100%   {background:#6699ff;}
       }
-      .mao {
-        max-width: 80%;
-        max-height: 80%;
-        height: auto;
+      @-moz-keyframes spin {
+          from { -moz-transform: rotate(0deg); }
+          to { -moz-transform: rotate(360deg); }
+      }
+      @-webkit-keyframes spin {
+          from { -webkit-transform: rotate(0deg); }
+          to { -webkit-transform: rotate(360deg); }
+      }
+      @keyframes spin {
+          from {transform:rotate(0deg);}
+          to {transform:rotate(360deg);}
       }
     </style>
     <script>
