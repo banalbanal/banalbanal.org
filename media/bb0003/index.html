@@ -38,7 +38,7 @@
         -moz-animation:spin 15s linear infinite; /* Firefox */
         -webkit-animation:spin 15s linear infinite; /* Safari and Chrome */
       }
-      
+
       @-moz-keyframes bgcolor {
         0%   {background:#6699ff;}
         33%  {background:#ffccff;}
@@ -53,16 +53,16 @@
         100%   {background:#6699ff;}
       }
       @-moz-keyframes spin {
-          from { -moz-transform: rotate(0deg); }
-          to { -moz-transform: rotate(360deg); }
+          from { -moz-transform: rotate(360deg); }
+          to { -moz-transform: rotate(0deg); }
       }
       @-webkit-keyframes spin {
-          from { -webkit-transform: rotate(0deg); }
-          to { -webkit-transform: rotate(360deg); }
+          from { -webkit-transform: rotate(360deg); }
+          to { -webkit-transform: rotate(0deg); }
       }
       @keyframes spin {
-          from {transform:rotate(0deg);}
-          to {transform:rotate(360deg);}
+          from {transform:rotate(360deg);}
+          to {transform:rotate(0deg);}
       }
     </style>
     <script>
