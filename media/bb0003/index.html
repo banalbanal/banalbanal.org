@@ -15,7 +15,7 @@
       <source src="https://trello-attachments.s3.amazonaws.com/5791217b8864b1ef59cdb02c/57f6f134fc8fcccf8c6d6917/56a66689792f1ed98a410f9825b92ec5/site-terapia.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
-    <div style="padding: 60px; position: relative;">
+    <div class="wrap">
       <img src='mao.png' class="mao">
     </div>
     <style>
@@ -25,13 +25,12 @@
         -moz-animation:bgcolor 15s linear infinite; /* Firefox */
         -webkit-animation:bgcolor 15s linear infinite; /* Safari and Chrome */
       }
-
       .mao {
-        top: 20px;
-        bottom: 20px;
-        left: 20px;
-        right: 20px;
-        position: absolute;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         max-width: 100%;
         height: auto;
         animation:spin 15s linear infinite;
