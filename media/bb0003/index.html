@@ -16,16 +16,16 @@
       Your browser does not support the audio element.
     </audio>
 
-    <div class="wrap fade2">
-      <img src='mao.png' class="mao">
-    </div>
     <div class="wrap fade4">
       <img src='mao.png' class="mao">
     </div>
-    <div class="wrap fade6">
+    <div class="wrap fade3">
       <img src='mao.png' class="mao">
     </div>
-    <div class="wrap fade8">
+    <div class="wrap fade2">
+      <img src='mao.png' class="mao">
+    </div>
+    <div class="wrap fade1">
       <img src='mao.png' class="mao">
     </div>
 
@@ -58,31 +58,29 @@
         -webkit-animation:spin 15s linear infinite; /* Safari and Chrome */
       }
 
-      .fade8 .mao {
-        opacity: 0.8;
-        animation:spin 15.2s linear infinite;
-        -moz-animation:spin 15.2s linear infinite; /* Firefox */
-        -webkit-animation:spin 15.2s linear infinite; /* Safari and Chrome */
-      }
-
-      .fade6 .mao {
-        opacity: 0.8;
-        animation:spin 15.4s linear infinite;
-        -moz-animation:spin 15.4s linear infinite; /* Firefox */
-        -webkit-animation:spin 15.4s linear infinite; /* Safari and Chrome */
-      }
-
-      .fade4 .mao {
-        opacity: 0.4;
-        animation:spin 15.6s linear infinite;
-        -moz-animation:spin 15.6s linear infinite; /* Firefox */
-        -webkit-animation:spin 15.6s linear infinite; /* Safari and Chrome */
+      .fade1 .mao {
+        opacity: 0;
+        animation:fade 30s linear;
+        -moz-animation:fade 30s linear; /* Firefox */
+        -webkit-animation:fade 30s linear; /* Safari and Chrome */
       }
       .fade2 .mao {
-        opacity: 0.2;
-        animation:spin 15.8s linear infinite;
-        -moz-animation:spin 15.8s linear infinite; /* Firefox */
-        -webkit-animation:spin 15.8s linear infinite; /* Safari and Chrome */
+        opacity: 0;
+        animation:fade 30s linear;
+        -moz-animation:fade 30s linear; /* Firefox */
+        -webkit-animation:fade 30s linear; /* Safari and Chrome */
+      }
+      .fade3 .mao {
+        opacity: 0;
+        animation:fade 30s linear;
+        -moz-animation:fade 30s linear; /* Firefox */
+        -webkit-animation:fade 30s linear; /* Safari and Chrome */
+      }
+      .fade4 .mao {
+        opacity: 0;
+        animation:fade 30s linear;
+        -moz-animation:fade 30s linear; /* Firefox */
+        -webkit-animation:fade 30s linear; /* Safari and Chrome */
       }
 
       @-moz-keyframes bgcolor {
@@ -98,6 +96,7 @@
         66%   {background:#ffff99;}
         100%   {background:#6699ff;}
       }
+
       @-moz-keyframes spin {
           from { -moz-transform: rotate(360deg); }
           to { -moz-transform: rotate(0deg); }
@@ -109,6 +108,19 @@
       @keyframes spin {
           from {transform:rotate(360deg);}
           to {transform:rotate(0deg);}
+      }
+
+      @-moz-keyframes fade {
+          from { opacity: 0; }
+          to { opacity: 0.6; }
+      }
+      @-webkit-keyframes fade {
+        from { opacity: 0; }
+        to { opacity: 0.6; }
+      }
+      @keyframes fade {
+        from { opacity: 0; }
+        to { opacity: 0.6; }
       }
     </style>
     <script>
