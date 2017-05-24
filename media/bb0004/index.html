@@ -1,0 +1,76 @@
+<!DOCTYPE html
+      PUBLIC "-//W3C//DTD HTML 4.01//EN"
+      "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US">
+  <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon"
+          type="image/png"
+          href="theme/cursor.png">
+    <meta property="og:image" content="http://banalbanal.org/theme/display.png" />
+    <title>BANAL BANAL</title>
+    <!-- <script src="//cdn.jsdelivr.net/interact.js/1.2.6/interact.min.js"></script> -->
+  </head>
+  <body>
+    <audio autoplay loop>
+      <source src="https://trello-attachments.s3.amazonaws.com/5791217b8864b1ef59cdb02c/57f6f134fc8fcccf8c6d6917/56a66689792f1ed98a410f9825b92ec5/site-terapia.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+
+    <div class="wrap">
+      <img src='mao.png' class="mao">
+    </div>
+
+    <style>
+      body {
+        text-align: center;
+        animation:bgcolor 15s linear infinite;
+        -moz-animation:bgcolor 15s linear infinite; /* Firefox */
+        -webkit-animation:bgcolor 15s linear infinite; /* Safari and Chrome */
+      }
+      .wrap {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+      .mao {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+        animation:spin 15s linear infinite;
+        -moz-animation:spin 15s linear infinite; /* Firefox */
+        -webkit-animation:spin 15s linear infinite; /* Safari and Chrome */
+      }
+      @-moz-keyframes bgcolor {
+        0%   {background:#6699ff;}
+        33%  {background:#ffccff;}
+        66%   {background:#ffff99;}
+        100%   {background:#6699ff;}
+      }
+      @-webkit-keyframes bgcolor {
+        0%   {background:#6699ff;}
+        33%  {background:#ffccff;}
+        66%   {background:#ffff99;}
+        100%   {background:#6699ff;}
+      }
+      @-moz-keyframes spin {
+          from { -moz-transform: rotate(360deg); }
+          to { -moz-transform: rotate(0deg); }
+      }
+      @-webkit-keyframes spin {
+          from { -webkit-transform: rotate(360deg); }
+          to { -webkit-transform: rotate(0deg); }
+      }
+      @keyframes spin {
+          from {transform:rotate(360deg);}
+          to {transform:rotate(0deg);}
+      }
+    </style>
+    <script>
+    </script>
+
+  </body>
+</html>
