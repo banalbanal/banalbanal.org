@@ -1,4 +1,4 @@
-var promise = document.querySelector('audio').play();
+var promise = document.querySelector('#audio').play();
 
 if (promise !== undefined) {
     promise.catch(error => {
