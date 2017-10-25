@@ -1,4 +1,3 @@
-window.onload = function(e){ 
 var promise = document.getElementById('audio').play();
 
 if (promise !== undefined) {
@@ -10,5 +9,4 @@ if (promise !== undefined) {
     }).then(() => {
 
     });
-}
 }
