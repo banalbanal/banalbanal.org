@@ -1,0 +1,97 @@
+<!DOCTYPE html
+      PUBLIC "-//W3C//DTD HTML 4.01//EN"
+      "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en-US">
+  <head profile="http://www.w3.org/2005/10/profile">
+    <link rel="icon"
+          type="image/png"
+          href="theme/cursor.png">
+    <link rel="stylesheet" href="theme/style.css">
+    <meta property="og:image" content="http://banalbanal.org/theme/display.png" />
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <title>BANAL BANAL</title>
+  </head>
+
+  <a href="/"><img src="theme/logo.gif" width="205" class="logo"></a>
+
+  <div class="inject-menu"></div>
+
+  <div class="page-content">
+
+      <p>
+        <a href="media/bb0009/index.html">
+          Raul Luna - “Future Television”
+          <img class="link-stamp" src="theme/link.png">
+        </a>
+      </p>
+
+      <p>
+        Texto: Germano Dushá<br>
+        <i>Text by</i>
+      </p>
+
+      <p>10/09/2020 21h 58m 30s</p>
+
+      <p>
+        Future Television, nova internet, são tantas chamadas, jorrando quente, tantas janelas, abas guardadas, quantos canais, esses estímulos todos, que nos sopram hormônios espinha acima, fundindo corpos a telas, tipo Videodrome, penetrando abdomens, derretendo cabeças, saindo pelas orelhas;
+      </p>
+      <p>
+        Future Television, são tantas escalas, analogias, tantas formas de vida, escorrendo no vazio, tantas sensações… Das centenas de bilhões de galáxias às trilhões de células nos corpos humanos. Vasta taxinomia de humores, exercícios da forma, ginástica espiritual em todos os planos.
+      </p>
+      <p>
+        Future Television, antes ou agora, sob demanda, qual o programa? São tantos gestos, tantas possibilidades, podia ser tudo, e agora cada vez mais abstratas, operações dialéticas e econômicas em um microssegundo, fluxo infinito de informação, documento ou ficção, dentro ou fora, no código cravado na máquina ou atravessado no meio da garganta, e nas fábricas de bitcoin, nos galpões infinitos de servidores, exércitos de mineradores digitais, os algoritmos mais afiados, e nas ruas as câmeras e medidores de temperatura, os drones militares, os drones de vigilância civil, os drones de limpeza sanitária. Que ecologia… Onde começa tua imagem e termina minha retina?
+      </p>
+   
+      <p>
+        <i>
+          [origin] 
+          In the Solar core, chains of proton-proton reactions fuse hydrogen atoms, turning them into alpha particles. In the heat of the moment, during the fusion, part of  the atom’s energy is released under the form of photons escaping as electromagnetic radiation to the atmosphere.
+        </i>
+      </p>
+      <p>
+        <i>
+          [absorption] 
+          After a long inertial drift through the vacuum, the electromagnetic waves hit the surface of Planet Earth. The incident radiation excites photosensitive electrons present in plants, which interacts with carbon dioxides and water molecules collected from air and soil. From this dramatic interaction, oxygen and carbohydrates are produced and ultimately constitute the very body of plants. Whales, herbivorous reptiles and elephants feed on these plants, absorbing their carbohydrates to form their own bodies, so other animals can feed on these animals, indefinitely expanding the trophic chain.
+        </i>
+      </p>
+      
+      <p>
+        <i>
+            [transformation] 
+            As time goes by, layers of soil are accumulated over plant remains and dead animals, incompletely decomposed. When many of those layers are formed over these organic remains, high pressures and high temperatures, in addition to the absence of oxygen, trigger endothermic reactions. Oil is formed. The low density oil travels through porous spaces of the subsoil, migrating between layers of adjacent rocks until forming a reservoir from the encounter with a geological structure that stops its movement.
+        </i>
+      </p>
+        
+        
+      <p>
+        <i>
+            [production] 
+            A drilling rig digs a hole in the ground into the reservoir. While a steel tube guarantees the structural integrity of the hole, a set of valves regulates pressure and flows, ensuring that the oil passes through the hole. The extracted product is subjected to a gas-oil-water separation. Crude oil gushing from the depths of the soil is now heated and distilled, achieving its derivatives. One of these derivatives has its complex molecules divided into simpler molecules by the breaking of some chemical bonds, only to be re-grouped by new conjunctions between atoms to form macromolecular structures. The polymers are formed. And from them countless objects are produced: automotive caps, computer keyboards, floppy disks, helmets ...
+        </i>
+      </p>
+        
+        
+      <p>
+        <i>
+            [decay] 
+            Sun’s ultraviolet light, formed by the fusion of helium nuclei, excites molecules of the polymer, making them add oxygen atoms in their bonds. It weakens them and makes them brittle. The macromolecules are thus divided into smaller chains to the point of being metabolized by microorganisms. At this point, they are incorporated into the microorganism’s bodies or are converted into carbon dioxide and released to the air, where they are again ingested by plants and mixed with water and electromagnetic waves of the sun for the production of the vegetable body, which will feed the animals, until it is time from them to merge with the soil once again.
+        </i>
+      </p>
+                
+        
+    </div>
+</html>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78045920-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
