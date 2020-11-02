@@ -1,3 +1,9 @@
+// TODO docs
+/**
+ * Tamanho das imagens é relativo a parte maior da view. 
+ */
+
+
 /**
  * Slideshow
  */
@@ -6,16 +12,21 @@
 const ROOT = document.getElementById("vcb-slideshow-root");
 
 // Config
-const TIMER = 2000
-const IMAGES = [
-  'corrompida_0001.png', 'corrompida_0002.png', 'corrompida_0003.png', 'corrompida_0004.png', 'corrompida_0005.png', 'corrompida_0006.png', 'corrompida_0007.png', 'corrompida_0008.png', 'corrompida_0009.png', 'corrompida_0010.png', 'corrompida_0011.png', 'corrompida_0012.png', 'corrompida_0013.png', 'corrompida_0014.png', 'corrompida_0015.png', 'corrompida_0016.png', 'corrompida_0017.png', 'corrompida_0018.png', 'corrompida_0020.png', 'corrompida_0021.png',
-  'detalhes_corrompida_0001.png', 'detalhes_corrompida_0002.png', 'detalhes_corrompida_0003.png', 'detalhes_corrompida_0004.png', 'detalhes_corrompida_0005.png', 'detalhes_corrompida_0006.png', 'detalhes_corrompida_0007.png', 'detalhes_corrompida_0008.png', 'detalhes_corrompida_0009.png', 'detalhes_corrompida_0010.png', 'detalhes_corrompida_0011.png', 'detalhes_corrompida_0012.png', 'detalhes_corrompida_0013.png', 'detalhes_corrompida_0014.png', 'detalhes_corrompida_0015.png', 'detalhes_corrompida_0016.png', 'detalhes_corrompida_0017.png', 'detalhes_corrompida_0018.png', 'detalhes_corrompida_0019.png', 'detalhes_corrompida_0020.png', 'detalhes_corrompida_0021.png',
-]
+const PRODUCTION = true
+const SFW = !PRODUCTION
+const TIMER = PRODUCTION ? 2000 : 500
+const MIN_IMG_SHOW = 5
+const PROD_IMGS = ['corrompida_0001.png', 'corrompida_0002.png', 'corrompida_0003.png', 'corrompida_0004.png', 'corrompida_0005.png', 'corrompida_0006.png', 'corrompida_0007.png', 'corrompida_0008.png', 'corrompida_0009.png', 'corrompida_0010.png', 'corrompida_0011.png', 'corrompida_0012.png', 'corrompida_0013.png', 'corrompida_0014.png', 'corrompida_0015.png', 'corrompida_0016.png', 'corrompida_0017.png', 'corrompida_0018.png', 'corrompida_0019.png', 'corrompida_0020.png', 'corrompida_0021.png', 'corrompida_0022.png', 'corrompida_0023.png', 'corrompida_0024.png', 'corrompida_0025.png', 'corrompida_0026.png', 'corrompida_0027.png', 'corrompida_0028.png', 'corrompida_0029.png', 'corrompida_0030.png', 'corrompida_0031.png', 'corrompida_0032.png', 'corrompida_0033.png', 'corrompida_0034.png', 'corrompida_0035.png', 'corrompida_0036.png', 'corrompida_0037.png', 'corrompida_0038.png', 'corrompida_0039.png']
+const DEV_IMGS = [] // TODO
+const IMAGES = PRODUCTION ? PROD_IMGS : DEV_IMGS
+const SHUFFLED_IMAGES = shuffleArray(IMAGES)
 
 // STATE
 let currentSlide = 0
 let slides = []
 let maxSlides = 0
+let slidesVisible = []
+let disappearingImages = []
 
 /**
  * Loading
@@ -54,47 +65,79 @@ function getRandomSize() {
   const multiply = randomIntFromInterval(50, 60) / 100
   const size = biggerSize * multiply
 
-  return size
+  const unit = innerWidth > innerHeight ? 'vw' : 'vh'
+  const relativeUnit = (size / biggerSize) * 100
+  const styleValue = `${relativeUnit}${unit}`
+
+  return { size, unit, relativeUnit, styleValue }
 }
 
 function getRandomPos(size) {
   const { innerWidth, innerHeight } = window
 
-  const x = (Math.random() * (innerWidth - (size * .6))).toFixed();
-  const y = (Math.random() * (innerHeight - (size * .6))).toFixed();
+  const x = ((Math.random() * (innerWidth - (size * .6))) / innerWidth) * 100
+  const y = ((Math.random() * (innerHeight - (size * .6))) / innerHeight) * 100
 
-  return { x, y }
+  return { x: `${x}vw`, y: `${y}vh` }
 }
 
 /**
  * Slideshow
  */
 
-function createRandomImage2(image) {
-  const size = getRandomSize()
+function addImage(image) {
+  const { size, styleValue } = getRandomSize()
   const pos = getRandomPos(size)
 
   image.style.left = pos.x
   image.style.top = pos.y
-  image.width = size
-  image.height = size
+  image.style.width = styleValue
+  image.style.height = styleValue
+  image.classList.remove('vcb-img-disappear')
 
+  slidesVisible.push(image)
   ROOT.appendChild(image)
 }
 
 function initSlideshow() {
   maxSlides = slides.length
 
-  createRandomImage2(slides[0])
-  currentSlide = 2
+  addImage(slides[0])
+  currentSlide = 0
 
-  setInterval(function () {
+  const ticker = setInterval(function () {
     if (currentSlide + 1 < maxSlides) {
       currentSlide++
     } else {
       currentSlide = 0
     }
-    createRandomImage2(slides[currentSlide])
+
+    // FOR DEVELOP MODE ONLY
+    // if (!PRODUCTION && (currentSlide === 1)) {
+    // if (!PRODUCTION && (currentSlide === 10)) {
+    //   clearInterval(ticker)
+    //   return
+    // }
+
+    // NOT COMPLETED
+    // const canDeleteOne = currentSlide > MIN_IMG_SHOW
+    // if (canDeleteOne) {
+    //   const timeToClean = TIMER <= 500 ? 2 : ((TIMER / 1000) * 2)
+
+    //   if (currentSlide % timeToClean) {
+    //     disappearingImages.forEach((image) => {
+    //       image.remove()
+    //     });
+    //     disappearingImages = []
+
+    //     const toDelete = slidesVisible.shift()
+    //     toDelete.classList.add('vcb-img-disappear')
+    //     disappearingImages.push(toDelete)
+    //   }
+    // }
+
+    // console.log('aqui', slides, currentSlide)
+    addImage(slides[currentSlide])
   }, TIMER)
 }
 
@@ -103,11 +146,11 @@ function initSlideshow() {
  */
 
 function main() {
-  const imagesStr = shuffleArray(IMAGES)
-
-  imagesStr.forEach((src) => {
+  SHUFFLED_IMAGES.forEach((src) => {
     const image = new Image()
     image.src = `images/${src}`
+    image.id = src
+    // image.classList.toggle('vcb-img-disappear')
 
     image.onload = function() {
       loaded += 1
