@@ -15,5 +15,4 @@ function onToggleText() {
 
   const btn = document.getElementById("btn-text");
   btn.classList.toggle("btn-txt-on");
-
 }
