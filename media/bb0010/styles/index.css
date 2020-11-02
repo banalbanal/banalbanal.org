@@ -98,10 +98,10 @@
   background-size: 56.5px 77.5px !important;
 }
 
-.vcb-btn.vcb-audio { background: url("../icons/icon\ sound.png") no-repeat; }
-.vcb-btn.vcb-audio:hover { background: url("../icons/icon\ nosound.png") no-repeat; }
-.vcb-btn.vcb-audio.btn-audio-on { background: url("../icons/icon\ nosound.png") no-repeat; }
-.vcb-btn.vcb-audio.btn-audio-on:hover { background: url("../icons/icon\ sound.png") no-repeat; }
+.vcb-btn.vcb-audio { background: url("../icons/icon\ nosound.png") no-repeat; }
+.vcb-btn.vcb-audio:hover { background: url("../icons/icon\ sound.png") no-repeat; }
+.vcb-btn.vcb-audio.btn-audio-on { background: url("../icons/icon\ sound.png") no-repeat; }
+.vcb-btn.vcb-audio.btn-audio-on:hover { background: url("../icons/icon\ nosound.png") no-repeat; }
 
 .vcb-btn.vcb-text { background: url("../icons/icon\ text.png") no-repeat; }
 .vcb-btn.vcb-text:hover { background: url("../icons/icon\ notext.png") no-repeat; }

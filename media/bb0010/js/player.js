@@ -1,4 +1,4 @@
-let playingAudio = false;
+let playingAudio = true;
 
 function onToggleAudio() {
   const btn = document.getElementById("btn-audio");
