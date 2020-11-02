@@ -32,7 +32,7 @@
   animation: growImg 20s;
 }
 
-@keyframes desapperImg {
+/* @keyframes desapperImg {
   0% { opacity: 1; }
   10% { transform: scale(1.2); }
   50% { opacity: 0; }
@@ -43,7 +43,7 @@
 .vcb-img-disappear {
   opacity: 0;
   animation: desapperImg 1s !important;
-}
+} */
 
 .vcb-menu {
   position: absolute;
