@@ -129,31 +129,6 @@ function initSlideshow() {
       currentSlide = 0
     }
 
-    // FOR DEVELOP MODE ONLY
-    // if (!PRODUCTION && (currentSlide === 1)) {
-    // if (!PRODUCTION && (currentSlide === 10)) {
-    //   clearInterval(ticker)
-    //   return
-    // }
-
-    // NOT COMPLETED
-    // const canDeleteOne = currentSlide > MIN_IMG_SHOW
-    // if (canDeleteOne) {
-    //   const timeToClean = TIMER <= 500 ? 2 : ((TIMER / 1000) * 2)
-
-    //   if (currentSlide % timeToClean) {
-    //     disappearingImages.forEach((image) => {
-    //       image.remove()
-    //     });
-    //     disappearingImages = []
-
-    //     const toDelete = slidesVisible.shift()
-    //     toDelete.classList.add('vcb-img-disappear')
-    //     disappearingImages.push(toDelete)
-    //   }
-    // }
-
-    // console.log('aqui', slides, currentSlide)
     addImage(slides[currentSlide])
 
     setTimeout(createSlide, newTimeout)
@@ -170,6 +145,9 @@ function initSlideshow() {
     const toDelete = slidesVisible.shift()
     toDelete.remove()
 
+    /**
+     * If was necessary add desappear effect.
+     */
     // toDelete.classList.add('vcb-img-disappear')
     // disappearingImages.push(toDelete)
 
@@ -233,7 +211,6 @@ function main() {
       if (percent === 100) {
         setTimeout(() => {
           initSlideshow()
-          // prepareNexts()
           LOADING.innerText = ''
         }, 500)
       }
