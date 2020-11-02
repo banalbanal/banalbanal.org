@@ -2,14 +2,15 @@
   <head>
     <link rel="stylesheet" href="./styles/fonts.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <audio autoplay loop>
-    <source src="./audio/Frenesi Estático (Corrompida_0000).mpeg" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  
   <body class="vcb-body">
+    <audio id='vcb-audio' loop>
+      <source src="./audio/Frenesi Estático (Corrompida_0000).mpeg" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
     <!-- Slides -->
     <div class="vcb-slides">
       <img src="images/corrompida_0001.png"></img>
@@ -29,10 +30,18 @@
 
     <!-- Menu -->
     <div class="vcb-menu">
-      <div onclick="onToggleAudio()" class="vcb-btn vcb-audio"></div>
-      <div onclick="onToggleText()" class="vcb-btn vcb-text"></div>
+      <div
+        id="btn-text"
+        onclick="onToggleText()"
+        class="vcb-btn vcb-text"
+      ></div>
+      <div
+        id="btn-audio"
+        onclick="onToggleAudio()"
+        class="vcb-btn vcb-audio"
+      ></div>
     </div>
 
-    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/player.js"></script>
   </body>
 </html>
