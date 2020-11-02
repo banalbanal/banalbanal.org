@@ -1,6 +1,7 @@
 /**
  * Slideshow
  */
+
 // Elements
 const ROOT = document.getElementById("vcb-slideshow-root");
 
@@ -13,15 +14,16 @@ const IMAGES = [
 
 // STATE
 let currentSlide = 0
-let SLIDES = []
-let MAX_SLIDES = 0
+let slides = []
+let maxSlides = 0
 
 /**
  * Loading
  */
+
 let loaded = 0
-const totalImages = IMAGES.length
-const loading = document.getElementById("vcb-loading");
+const IMAGES_TO_LOAD = IMAGES.length
+const LOADING = document.getElementById("vcb-loading");
 
 /**
  * Helpers
@@ -81,18 +83,18 @@ function createRandomImage2(image) {
 }
 
 function initSlideshow() {
-  MAX_SLIDES = SLIDES.length
+  maxSlides = slides.length
 
-  createRandomImage2(SLIDES[0])
+  createRandomImage2(slides[0])
   currentSlide = 2
 
   setInterval(function () {
-    if (currentSlide + 1 < MAX_SLIDES) {
+    if (currentSlide + 1 < maxSlides) {
       currentSlide++
     } else {
       currentSlide = 0
     }
-    createRandomImage2(SLIDES[currentSlide])
+    createRandomImage2(slides[currentSlide])
   }, TIMER)
 }
 
@@ -100,24 +102,6 @@ function initSlideshow() {
  * Loader
  */
 
-function updateLoader() {
-  loaded += 1
-  const percent = (loaded / totalImages) * 100
-  if (percent === 100) {
-    setTimeout(() => {
-      initSlideshow()
-      loading.innerText = ''
-    }, 500)
-  }
-
-  loading.innerText = `${Number(percent).toFixed(0)}%`
-
-  return percent
-}
-
-/**
- * Main
- */
 function main() {
   const imagesStr = shuffleArray(IMAGES)
 
@@ -126,11 +110,20 @@ function main() {
     image.src = `images/${src}`
 
     image.onload = function() {
-      const percent = updateLoader()
-      console.log(percent)
+      loaded += 1
+      const percent = (loaded / IMAGES_TO_LOAD) * 100
+      if (percent === 100) {
+        setTimeout(() => {
+          initSlideshow()
+          LOADING.innerText = ''
+        }, 500)
+      }
+    
+      LOADING.innerText = `${Number(percent).toFixed(0)}%`
     }
     
-    SLIDES.push(image)
+    slides.push(image)
   });
 }
+
 main()
