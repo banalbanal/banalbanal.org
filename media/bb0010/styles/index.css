@@ -29,7 +29,7 @@
 
 .vcb-slideshow img {
   position: absolute;
-  animation: growImg 20s;
+  /* animation: growImg 20s; */
 }
 
 /* @keyframes desapperImg {
