@@ -18,7 +18,7 @@
 const ROOT = document.getElementById("vcb-slideshow-root");
 
 // Config
-const PRODUCTION = false
+const PRODUCTION = true
 const TIMER = PRODUCTION ? 2000 : 500
 const MIN_IMG_SHOW = 5
 const PROD_IMGS = ['corrompida_0001.png', 'corrompida_0002.png', 'corrompida_0003.png', 'corrompida_0004.png', 'corrompida_0005.png', 'corrompida_0006.png', 'corrompida_0007.png', 'corrompida_0008.png', 'corrompida_0009.png', 'corrompida_0010.png', 'corrompida_0011.png', 'corrompida_0012.png', 'corrompida_0013.png', 'corrompida_0014.png', 'corrompida_0015.png', 'corrompida_0016.png', 'corrompida_0017.png', 'corrompida_0018.png', 'corrompida_0019.png', 'corrompida_0020.png', 'corrompida_0021.png', 'corrompida_0022.png', 'corrompida_0023.png', 'corrompida_0024.png', 'corrompida_0025.png', 'corrompida_0026.png', 'corrompida_0027.png', 'corrompida_0028.png', 'corrompida_0029.png', 'corrompida_0030.png', 'corrompida_0031.png', 'corrompida_0032.png', 'corrompida_0033.png', 'corrompida_0034.png', 'corrompida_0035.png', 'corrompida_0036.png', 'corrompida_0037.png', 'corrompida_0038.png', 'corrompida_0039.png']
@@ -129,7 +129,7 @@ function initSlideshow() {
       currentSlide = 0
     }
 
-    if (currentSlide >= 5)
+    // if (currentSlide >= 5)
 
     addImage(slides[currentSlide])
 
@@ -144,8 +144,8 @@ function initSlideshow() {
 
     if (slidesVisible.length < MIN_SLIDES) return
 
-    // const toDelete = slidesVisible.shift()
-    // toDelete.remove()
+    const toDelete = slidesVisible.shift()
+    toDelete.remove()
 
     /**
      * If was necessary add desappear effect.
@@ -202,9 +202,9 @@ function prepareNexts () {
 
 let scale = 1;
 function scrollToZoom(event) {
-  scale += event.deltaY * -0.0001;
+  scale += event.deltaY * -0.00005;
   // Restrict scale
-  scale = Math.min(Math.max(0.9, scale), 1.3);
+  scale = Math.min(Math.max(0.9, scale), 1.9);
 
   ROOT.style.transform = `scale(${scale})`;
 }
