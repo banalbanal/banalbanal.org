@@ -1,0 +1,119 @@
+/* 
+  vcb = Vitória Cribb
+ */
+
+.vcb-body {
+  background: #000;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  max-width: 100vw;
+  max-height: 100vh;
+}
+
+.vcb-slideshow {
+  z-index: -1;
+  position: relative;
+  max-width: 100vw;
+  max-height: 100vh;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  left: 0;
+}
+
+@keyframes growImg {
+  from { transform: scale(0.7); }
+  to { transform: scale(1); }
+}
+
+.vcb-slideshow img {
+  position: absolute;
+  animation: growImg 20s;
+}
+
+/* @keyframes desapperImg {
+  0% { opacity: 1; }
+  10% { transform: scale(1.2); }
+  50% { opacity: 0; }
+  100% { transform: scale(0.8); }
+  to { transform: scale(0.8); }
+}
+
+.vcb-img-disappear {
+  opacity: 0;
+  animation: desapperImg 1s !important;
+} */
+
+.vcb-menu {
+  position: absolute;
+  top: clamp(5vh, 5vw, 3rem);
+  left: clamp(5vh, 5vw, 3rem);
+  z-index: 3;
+  display: flex;
+  align-items: center;
+}
+
+.vcb-menu div:nth-child(1) {
+  margin-right: clamp(2vh, 2vw, 2vw);
+}
+
+#vcb-loading {
+  color: #fff;
+  font-family: Orbitron, Arial, sans-serif;
+  font-size: clamp(4vh, 1.5vw, 1.5vw);
+  width: clamp(15vh, 7.5vw, 7.5vw);
+  text-align: right;
+}
+
+.vcb-menu-txts {
+  display: none;
+  max-width: 100vw;
+  height: 100vh;
+  padding: clamp(5vh, 5vw, 3rem);
+  padding-top: clamp(100px, 5vw, 3rem);
+  overflow: auto;
+  z-index: 2;
+  text-align: justify;
+}
+
+.vcb-txts-show {
+  display: block;
+}
+
+.vcb-menu-txts p {
+  color: #fff;
+  font-family: Orbitron, Arial, sans-serif;
+  font-size: clamp(4vh, 1.5vw, 1.5vw);
+  line-height: 160%;
+  padding-bottom: clamp(4vh, 1.5vw, 1.5vw);
+}
+
+/* Buttons menu */
+/* 113px x 155px */
+.vcb-btn {
+  width: 56.5px;
+  height: 77.5px;
+  display: inline-block;
+  background-size: 56.5px 77.5px !important;
+}
+
+.vcb-btn.vcb-audio { background: url("../icons/icon\ nosound.png") no-repeat; }
+.vcb-btn.vcb-audio:hover { background: url("../icons/icon\ sound.png") no-repeat; }
+.vcb-btn.vcb-audio.btn-audio-on { background: url("../icons/icon\ sound.png") no-repeat; }
+.vcb-btn.vcb-audio.btn-audio-on:hover { background: url("../icons/icon\ nosound.png") no-repeat; }
+
+.vcb-btn.vcb-text { background: url("../icons/icon\ text.png") no-repeat; }
+.vcb-btn.vcb-text:hover { background: url("../icons/icon\ notext.png") no-repeat; }
+.vcb-btn.vcb-text.btn-txt-on { background: url("../icons/icon\ notext.png") no-repeat; }
+.vcb-btn.vcb-text.btn-txt-on:hover { background: url("../icons/icon\ text.png") no-repeat; }
+
+/* 
+  Hide scrollbar
+ */
+ /* Hide scrollbar for IE, Edge and Firefox */
+.vcb-menu-txts::-webkit-scrollbar { display: none; }
+.vcb-menu-txts {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
