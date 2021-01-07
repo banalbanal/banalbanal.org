@@ -12,6 +12,9 @@
   </head>
 
   <body>
+    <audio id="audio">
+      <source src="/media/bb0011/music.mp3" type="audio/mpeg">
+    </audio>
     <script type="text/javascript">
 	width='100%';		// the width of the embedded map in pixels or percentage
 	height='100%';		// the height of the embedded map in pixels or percentage
@@ -26,6 +29,7 @@
     </script>
     <script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>
     <script src="js/scripts.js"></script>
+    <img id="overlay-image" src="/media/bb0011/image.jpg" />
     <script>
       window.onload = function() {
         let myiFrame = document.getElementById("marinetraffic");
