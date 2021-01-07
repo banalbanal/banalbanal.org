@@ -13,7 +13,7 @@
 
   <body>
     <audio id="audio">
-      <source src="/media/bb0011/music.mp3" type="audio/mpeg">
+      <source src="media/bb0011/music.mp3" type="audio/mpeg">
     </audio>
     <script type="text/javascript">
 	width='100%';		// the width of the embedded map in pixels or percentage
@@ -29,9 +29,14 @@
     </script>
     <script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>
     <script src="js/scripts.js"></script>
-    <img id="overlay-image" src="/media/bb0011/image.jpg" />
+    <img id="overlay-image" src="media/bb0011/image.jpg" />
     <script>
+      const clickEvent = () => {
+        alert('play')
+        document.getElementById('audio').play();
+      }
       window.onload = function() {
+        document.getElementById("overlay-image").addEventListener('click', clickEvent);
         let myiFrame = document.getElementById("marinetraffic");
         let doc = myiFrame.contentDocument;
         console.log(myiFrame)
@@ -46,6 +51,14 @@
       top: -5px;
       width: calc(100vw + 50px);
       height: calc(100vh + 62px);
+    }
+    #overlay-image {
+      position: fixed;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
     }
   </style>
 </html>
