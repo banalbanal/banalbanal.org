@@ -32,8 +32,8 @@
     <img id="overlay-image" src="media/bb0011/image.jpg" />
     <script>
       const clickEvent = () => {
-        alert('play')
         document.getElementById('audio').play();
+        document.getElementById("overlay-image").classList.add("clicked")
       }
       window.onload = function() {
         document.getElementById("overlay-image").addEventListener('click', clickEvent);
@@ -54,11 +54,16 @@
     }
     #overlay-image {
       position: fixed;
-      left: 0;
-      right: 0;
-      width: 100vw;
-      height: 100vh;
+      left: 10vw;
+      top: 10vh;
+      width: 80vw;
+      height: 80vh;
       object-fit: contain;
+    }
+    #overlay-image.clicked {
+      opacity: 0;
+      pointer-events: none;
+      transition: 1s all;
     }
   </style>
 </html>
