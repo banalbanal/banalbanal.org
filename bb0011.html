@@ -73,21 +73,22 @@
     .clicked #overlay-image {
       opacity: 0;
       pointer-events: none;
-      transition: 1s all;
+      transition: 1.5s all;
     }
     #watermark {
       position: fixed;
-      bottom: 5vh;
-      right: 5vh;
+      bottom: 40px;
+      right: 0px;
       width: 15vh;
       height: 15vh;
+      object-fit: contain;
       max-width: 200px;
       min-width: 200px;
       opacity: 0;
     }
     .clicked #watermark {
       opacity: 1;
-      transition: 1s all;
+      transition: 1.5s all;
     }
   </style>
 </html>
