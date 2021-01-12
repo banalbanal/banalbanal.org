@@ -16,24 +16,34 @@
       <source src="media/bb0011/music.mp3" type="audio/mpeg">
     </audio>
     <script type="text/javascript">
-	width='100%';		// the width of the embedded map in pixels or percentage
-	height='100%';		// the height of the embedded map in pixels or percentage
-	border='0';		// the width of the border around the map (zero means no border)
-	shownames='true';	// to display ship names on the map (true or false)
-	latitude='37.4460';	// the latitude of the center of the map, in decimal degrees
-	longitude='24.9467';	// the longitude of the center of the map, in decimal degrees
-	zoom='9';		// the zoom level of the map (values between 2 and 17)
-	maptype='0';		// use 0 for Normal Map, 1 for Satellite
-	trackvessel='0';	// MMSI of a vessel (note: vessel will be displayed only if within range of the system) - overrides "zoom" option
-	fleet='';		// the registered email address of a user-defined fleet (user's default fleet is used)
+      const places = [
+        {latitude:-2.0972, longitude:-54.3933},
+        {latitude:36.9148,longitude:-48.5156},
+        {latitude: 11.7813,longitude:138.2520},
+        {latitude: 9.9093,longitude: -77.8986}
+      ]
+      const place = places[Math.floor(Math.random() * places.length)]
+      width='100%';    // the width of the embedded map in pixels or percentage
+      height='100%';    // the height of the embedded map in pixels or percentage
+      border='0';    // the width of the border around the map (zero means no border)
+      shownames='true';  // to display ship names on the map (true or false)
+      latitude=place.latitude;  // the latitude of the center of the map, in decimal degrees
+      longitude=place.longitude;  // the longitude of the center of the map, in decimal degrees
+      zoom='9';    // the zoom level of the map (values between 2 and 17)
+      maptype='0';    // use 0 for Normal Map, 1 for Satellite
+      trackvessel='0';  // MMSI of a vessel (note: vessel will be displayed only if within range of the system) - overrides "zoom" option
+      fleet='';    // the registered email address of a user-defined fleet (user's default fleet is used)
     </script>
     <script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>
     <script src="js/scripts.js"></script>
-    <img id="overlay-image" src="media/bb0011/image.jpg" />
+    <div id="images">
+      <img id="overlay-image" src="media/bb0011/image.jpg" />
+      <img id="watermark" src="media/bb0011/image.jpg" />
+    </div>
     <script>
       const clickEvent = () => {
         document.getElementById('audio').play();
-        document.getElementById("overlay-image").classList.add("clicked")
+        document.getElementById("images").classList.add("clicked")
       }
       window.onload = function() {
         document.getElementById("overlay-image").addEventListener('click', clickEvent);
@@ -60,9 +70,23 @@
       height: 80vh;
       object-fit: contain;
     }
-    #overlay-image.clicked {
+    .clicked #overlay-image {
       opacity: 0;
       pointer-events: none;
+      transition: 1s all;
+    }
+    #watermark {
+      position: fixed;
+      bottom: 5vh;
+      right: 5vh;
+      width: 15vh;
+      height: 15vh;
+      max-width: 200px;
+      min-width: 200px;
+      opacity: 0;
+    }
+    .clicked #watermark {
+      opacity: 1;
       transition: 1s all;
     }
   </style>
