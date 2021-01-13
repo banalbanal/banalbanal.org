@@ -22,7 +22,7 @@
         {latitude: 11.7813,longitude:138.2520},
         {latitude: 9.9093,longitude: -77.8986},
         {latitude: 32.9441, longitude: 121.8823},
-        {latitude: 40.2963, longitude: 010.9424}
+        {latitude: 40.2963, longitude: 10.9424}
       ]
       const place = places[Math.floor(Math.random() * places.length)]
       width='100%';    // the width of the embedded map in pixels or percentage
@@ -49,10 +49,6 @@
       }
       window.onload = function() {
         document.getElementById("overlay-image").addEventListener('click', clickEvent);
-        let myiFrame = document.getElementById("marinetraffic");
-        let doc = myiFrame.contentDocument;
-        console.log(myiFrame)
-        doc.body.innerHTML = doc.body.innerHTML + '<style>div { opacity: 0  }</style>';
       }
     </script>
   </body>
