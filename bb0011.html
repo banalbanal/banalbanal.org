@@ -12,8 +12,8 @@
   </head>
 
   <body>
-    <audio id="audio">
-      <source src="media/bb0011/music.mp3" type="audio/mpeg" autostart=true loop=true>
+    <audio id="audio" loop>
+      <source src="media/bb0011/music.mp3" type="audio/mpeg">
     </audio>
     <script type="text/javascript">
       const places = [
@@ -63,10 +63,10 @@
     }
     #overlay-image {
       position: fixed;
-      left: 10vw;
-      top: 10vh;
-      width: 80vw;
-      height: 80vh;
+      left: 40vw;
+      top: 40vh;
+      width: 20vw;
+      height: 20vh;
       object-fit: contain;
     }
     .clicked #overlay-image {
