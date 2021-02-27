@@ -4,94 +4,14 @@
   <head>
     <meta charset="utf-8">
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+    <title>TROCAR</title>
+    <meta name="description" content="TROCAR">
+    <meta name="author" content="TROCAR">
 
     <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
-    <audio id="audio" loop>
-      <source src="media/bb0011/music.mp3" type="audio/mpeg">
-    </audio>
-    <script type="text/javascript">
-      const places = [
-        {latitude:-2.0972, longitude:-54.3933},
-        {latitude: -33.4773,longitude:019.4775},
-        {latitude: 9.9093,longitude: -77.8986},
-        {latitude: 29.7644, longitude: 116.4098},
-        {latitude: 34.7597, longitude: 19.6647},
-        {latitude: 35.5680, longitude: -5.7523},
-        
-      ]
-      const place = places[Math.floor(Math.random() * places.length)]
-      width='100%';    // the width of the embedded map in pixels or percentage
-      height='100%';    // the height of the embedded map in pixels or percentage
-      border='0';    // the width of the border around the map (zero means no border)
-      shownames='true';  // to display ship names on the map (true or false)
-      latitude=place.latitude;  // the latitude of the center of the map, in decimal degrees
-      longitude=place.longitude;  // the longitude of the center of the map, in decimal degrees
-      zoom='7';    // the zoom level of the map (values between 2 and 17)
-      maptype='0';    // use 0 for Normal Map, 1 for Satellite
-      trackvessel='0';  // MMSI of a vessel (note: vessel will be displayed only if within range of the system) - overrides "zoom" option
-      fleet='';    // the registered email address of a user-defined fleet (user's default fleet is used)
-    </script>
-    <script type="text/javascript" src="https://www.marinetraffic.com/js/embed.js"></script>
-    <script src="js/scripts.js"></script>
-    <div id="images">
-      <img id="overlay-image" src="media/bb0011/image.png" />
-      <img id="watermark" src="media/bb0011/image.png" />
-    </div>
-    <script>
-      const clickEvent = () => {
-        document.getElementById('audio').play();
-        document.getElementById("images").classList.add("clicked")
-      }
-      window.onload = function() {
-        document.getElementById("overlay-image").addEventListener('click', clickEvent);
-      }
-    </script>
-  </body>
-  <style>
-    iframe {
-      position: fixed;
-      left: -50px;
-      top: -5px;
-      width: calc(100vw + 50px);
-      height: calc(100vh + 62px);
-    }
-    #overlay-image {
-      position: fixed;
-      left: -5vw;
-      top: -5vh;
-      width: 30vw;
-      height: 30vh;
-      object-fit: contain;
-      padding: 40vh 40vw;
-    }
-    .clicked #overlay-image {
-      opacity: 0;
-      pointer-events: none;
-      transition: 1.5s all;
-    }
-    #watermark {
-      position: fixed;
-      bottom: 15px;
-      right: -30px;
-      width: 13vh;
-      height: 13vh;
-      object-fit: contain;
-      max-width: 200px;
-      min-width: 200px;
-      opacity: 0;
-    }
-    .clicked #watermark {
-      opacity: 1;
-      transition: 1.5s all 3.5s;
-    }
-  </style>
-</html>
 
 <a href="/"><img src="theme/logo.gif" width="205" class="logo"></a>
 
@@ -262,6 +182,10 @@
     </p>
         
     </div>
+    
+    
+  </body>
+  
 </html>
 
 <script>
